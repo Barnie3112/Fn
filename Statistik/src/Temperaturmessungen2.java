@@ -7,14 +7,14 @@ public class Temperaturmessungen2 {
             System.out.println("Geben Sie eine Temperatur für den Tag " + (i + 1) + " ein!");
             zahlen[i] = IO.readDouble();
         }
-        double max = 0;
+        double max = zahlen[0];
         for (double temperaturmax : zahlen) {
 
             if (max < temperaturmax) {
                 max = temperaturmax;
             }
 
-            double min = 0;
+            double min = zahlen[0];
             for (double temperaturmin : zahlen) {
 
                 if (min > temperaturmin) {

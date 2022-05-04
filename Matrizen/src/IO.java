@@ -96,7 +96,16 @@ public class IO {
         for (int i = 0; i < liste.length; i++) {
             System.out.println("Wert: " + (i + 1) + ": " + liste[i]);
         }
-    }}
+    }
+
+public static int [][] readIntegerZweiDArray(int anzahl , int anzahl2) throws IOException {
+    int [][] zweiD= new int[anzahl][anzahl2];
+    for (int i=0; i< zweiD.length;i=i+1){
+        for (int j=0;j< zweiD[i].length;j=j+1){
+            zweiD[i][j]= readInteger();
+        }
+}return zweiD;
+}}
 
 
 
